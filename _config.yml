@@ -3,7 +3,7 @@
 # permalink: /:categories/:year/:month/:day/:title 
 permalink: /blog/:year/:title 
 
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 rdiscount:
   extensions: [  "autolink", ]
@@ -55,6 +55,8 @@ QRCode:
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://27zeros.com
+
+gems: [jekyll-paginate] # Gems
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
