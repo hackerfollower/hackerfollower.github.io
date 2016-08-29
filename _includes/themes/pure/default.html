@@ -69,14 +69,16 @@
         <div class="header">
           <div class="headerpic">
             <a href="/">
-              {% if page.nav == "page" %}
+              {% if layout.nav == 'page' %}
                 <img src="{{ BASE_PATH }}/images/apple-touch-icon.png" alt="欢迎访问刘浩理财规划小站" style="width: 140px;" title="返回首页">
               {% else %}
                 <img src="{{ BASE_PATH }}/images/apple-touch-icon.png" alt="欢迎访问刘浩理财规划小站" style="width: 100px;left: 10px" title="返回首页">
               {% endif %}
             </a>
           </div>
-          {% if page.nav == "post" %}
+          <!--{{ layout.nav }}-->
+          {% if layout.nav == 'post' %}
+          <!--hehehe-->
             <div id="toc"></div>
           {% else %}
             <h1 class="brand-title">{{ site.title }}</h1>
