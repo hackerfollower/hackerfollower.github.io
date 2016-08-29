@@ -1,11 +1,8 @@
 <div id="donate">
-  <form action="https://shenghuo.alipay.com/send/payment/fill.htm" method="post" target="_blank">
+  <form>
     <p>如果你觉得本文有用，可以捐赠五毛钱请作者喝茶。</p>
     <p>支付宝二维码，可扫码客户端捐赠或者点击后浏览器捐赠：</p>
-    <input type="hidden" name="optEmail" value="&#x6c;&#x69;&#x75;&#x62;&#x75;&#x68;&#x75;&#50;&#x40;&#49;&#54;&#51;&#46;&#99;&#x6f;&#109;" />
-    <input type="hidden" name="payAmount" value="0.50" />
-    <input type="hidden" name="title" placeholder="你的付款说明" value="" />
-    <input type="image" name="pay" src="{{ BASE_PATH }}{{ site.QRCode.alipay_donate }}" alt="捐赠" value="给我付款" />
+    <img src="{{ BASE_PATH }}{{ site.QRCode.alipay_donate }}"/>
     <p>微信支付二维码：</p>
     <img src="{{ BASE_PATH }}{{ site.QRCode.weixin_donate_wumao }}"/>
     <br>
