@@ -4,7 +4,7 @@
 permalink: /blog/:year/:title 
 
 highlighter: pygments
-markdown: rdiscount
+markdown: kramdown
 rdiscount:
   extensions: [  "autolink", ]
 markdown_ext:  markdown,mkd,mkdn,md
