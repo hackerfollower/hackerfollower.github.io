@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="{{ site.production_url }}{{ page.url }}">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/pure-min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!--[if lte IE 8]>
+      <link href="{{ ASSET_PATH }}/bootstrap/css/grids-responsive-old-ie-min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link href="{{ ASSET_PATH }}/bootstrap/css/grids-responsive-min.css" rel="stylesheet">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+      <link href="{{ ASSET_PATH }}/bootstrap/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link href="{{ ASSET_PATH }}/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <!--<![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images-->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!-- atom & rss feed -->
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/jquery-2.1.1.min.js"></script>
+
+    <link href="{{ ASSET_PATH }}/bootstrap/css/nprogress.css" rel="stylesheet">
+    <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/nprogress.js"></script>
+
+    <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/bootstrap/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <link type="text/css" rel="stylesheet" href="{{ ASSET_PATH }}/bootstrap/syntaxhighlighter/styles/shCoreDefault.css"/>
+
+    <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/page.js"></script>
+
+  </head>
+
+  <body>
+    <div id="layout" class="pure-g">
+      <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+          <div class="headerpic">
+            <a href="/">
+              {% if page.nav == "page" %}
+                <img src="{{ BASE_PATH }}/images/apple-touch-icon.png" alt="欢迎访问刘浩理财规划小站" style="width: 140px;" title="返回首页">
+              {% else %}
+                <img src="{{ BASE_PATH }}/images/apple-touch-icon.png" alt="欢迎访问刘浩理财规划小站" style="width: 100px;left: 10px" title="返回首页">
+              {% endif %}
+            </a>
+          </div>
+          {% if page.nav == "post" %}
+            <div id="toc"></div>
+          {% else %}
+            <h1 class="brand-title">{{ site.title }}</h1>
+            <h2 class="brand-tagline">{{ site.tagline }}</h2>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-item"><a class="pure-button" href="{{ BASE_PATH }}/time/">TIME</a></li>
+                <li class="nav-item"><a class="pure-button" href="{{ BASE_PATH }}/tags.html">TAG</a></li>
+                <li class="nav-item"><a class="pure-button" href="{{ BASE_PATH }}/categories.html">目录</a></li>
+                <li class="nav-item"><a class="pure-button" href="{{ BASE_PATH }}/about/">ABOUT</a></li>
+                <li class="nav-item"><a class="pure-button" href="{{ BASE_PATH }}/links/">LINK</a></li>
+              </ul>
+            </nav>
+            <div class="search">
+              <form action="/search">
+                <input type='text' placeholder="Search Blog" id='ts-search-input'/>
+              </form>
+            </div>
+            <nav id="nav">
+              <ul class="nav-list fa-2x">
+                <li class="nav-link">
+                  <a class="weibo" href="http://weibo.com/liubuhu"><i class="fa fa-weibo"></i></a>
+                </li>
+                <li class="nav-link">
+                  <a class="github" href="https://github.com/hackerfollower"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="nav-link">
+                  <a class="rss" href="/rss.xml"><i class="fa fa-rss"></i></a>
+                </li>
+              </ul>
+            </nav>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="content pure-u-1 pure-u-md-3-4">
+        <!--[if lt IE 8]>
+        <i class="label label-danger">亲爱的用户，您的浏览器版本过低，建议您升级浏览器获得更好的用户体验</i>
+        <![endif]-->
+        {{ content }}
+        <hr>
+
+        {% include 27zeros/shareandtop.html %}
+
+        <div class="footer">
+          <p>
+            <a href="http://www.miitbeian.gov.cn/" rel="nofollow" title="工业和信息化部ICP/IP地址/域名信息备案管理系统">鲁ICP备13010823号</a>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>and <a href="http://liuyouhai.com/" target="_blank">liyouhai.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {% include JB/analytics %}
+
+  </body>
+</html>

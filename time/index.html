@@ -1,0 +1,51 @@
+---
+layout: page
+title : 时间轴
+theme :
+  name : pure
+---
+{% include JB/setup %}
+
+<link href="{{ ASSET_PATH }}/css/pointtime.css" rel="stylesheet" type="text/css" media="screen">
+<script language="javascript">
+  $(function(){
+    var tags_a = $(".point-time");
+    tags_a.each(function(){
+      var x = 5;
+      var y = 0;
+      var rand = parseInt(Math.random() * (x - y + 1) + y);
+      $(this).addClass("point"+rand);
+    });
+  });
+</script>
+
+<div class="archive" >
+  <article>
+    {% for post in site.posts  %}
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+  
+      {% if forloop.first %}
+        <h3 class="year">{{this_year}}</h3>
+      {% endif %}
+  
+      <section>
+        <span class="point-time"></span>
+        <time>
+          <span>{{ post.date | date: "%B %e" }}</span>
+        </time>
+        <aside>
+          <p class="things"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></p>
+        </aside>
+      </section>
+    
+      {% if forloop.last %}
+      {% else %}
+        {% if this_year != next_year %}
+          <h3 class="year">{{next_year}}</h3>
+        {% else %}    
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </article>
+</div>

@@ -1,0 +1,45 @@
+---
+layout: page
+theme :
+  name : pure
+title: 刘浩理财规划小站
+tagline: 保险经纪人刘浩
+keywords: 精心优选, 精心优选定期寿险, 保险经纪人, 明亚, 明亚保险经纪, 性价比最高, 保险, 理财规划
+---
+{% include JB/setup %}
+{% for post in paginator.posts %}
+  <section class="post">
+    <header class="post-header">
+      {% if post.avatarimg %}
+        <img class="post-avatar" height="48" width="48" alt="刘浩" src="{{ post.avatarimg }}">
+      {% else if site.avatarimg %}
+        <img class="post-avatar" height="48" width="48" alt="刘浩" src="{{ site.avatarimg }}">
+      {% endif %}
+      <h2 class="post-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+  <p class="post-meta">By {{ post.date | date_to_long_string }}
+  <span>发表在</span>
+  {% assign categories_list = post.categories %}
+  {% assign tags_list = post.tags %}
+  {% include 27zeros/categoriesandtags.html %}
+  </p>
+    </header>
+    <div class="post-description">
+      {{ post.content | split:'<!-- more -->'| first }}
+      <a href="{{ BASE_PATH }}{{ post.url }}" class="post-categorybut">阅读全文</a>
+    </div>
+  </section>
+{% endfor %}
+
+<div class="pure-g pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="pure-u-1-2 pagination-item"><p>Previous</p></a>
+  {% else %}
+    <span class="pure-u-1-2 pagination-item"><p><i class="fa fa-chain-broken"></i>&nbsp;Nothing Previous</p></span>
+  {% endif %}
+  <!--span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span-->
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="pure-u-1-2 pagination-item"><p>Next</p></a>
+  {% else %}
+    <span class="pure-u-1-2 pagination-item"><p>Nothing Next&nbsp;<i class="fa fa-chain-broken"></i></p></span>
+  {% endif %}
+</div>
