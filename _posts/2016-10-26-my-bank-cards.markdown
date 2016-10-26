@@ -11,9 +11,8 @@ keywords: 银行卡
 
 ---
 
-国内银行业金融机构清单
-http://www.cbrc.gov.cn/chinese/jrjg/index.html
+[国内银行业金融机构清单][http://www.cbrc.gov.cn/chinese/jrjg/index.html]
 
-自己的银行卡表格（模板）
+自己的银行卡表格（模板）[/uploads/2016/bank_blank.xlsx]
 
 （完）
