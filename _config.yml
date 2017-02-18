@@ -1,7 +1,7 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 # permalink: /:categories/:year/:month/:day/:title 
-permalink: /blog/:year/:title 
+permalink: /blog/:year/:title/
 
 highlighter: rouge
 markdown: kramdown
@@ -9,7 +9,7 @@ rdiscount:
   extensions: [  "autolink", ]
 markdown_ext:  markdown,mkd,mkdn,md
 paginate: 6
-paginate_path: "blog/page/:num"
+paginate_path: "/blog/page/:num/"
 
 # 服务器相关配置
 exclude:     [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
