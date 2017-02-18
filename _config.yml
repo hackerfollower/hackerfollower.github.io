@@ -20,6 +20,7 @@ encoding:    utf-8         # 字符集编码
 # so be sure to set them if your theme uses them.
 #
 title :     刘浩
+tagline:    量子风险对冲
 copyright:  true #是否显示版权信息
 donate:     true #是否显示捐赠信息
 author:
