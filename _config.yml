@@ -1,7 +1,7 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 # permalink: /:categories/:year/:month/:day/:title 
-permalink: /blog/:year/:title/
+permalink: /blog/:year/:title
 
 highlighter: rouge
 markdown: kramdown
