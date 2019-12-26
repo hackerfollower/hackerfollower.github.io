@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  钱宝网——另类互联网金融平台
-date:   2015-01-08 18:00:00
+date:   2015-01-08 18:00:00 +0800
 categories: 理财
 tags: [互联网金融, 钱宝网]
 description: 高达70%年化收益率的互联网金融平台

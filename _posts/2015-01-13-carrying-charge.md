@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  分期付款的利率
-date:   2015-01-13 18:00:00
+date:   2015-01-13 18:00:00 +0800
 categories: 理财
 tags: [分期付款, 年化利率]
 description: 分期付款的利率陷阱

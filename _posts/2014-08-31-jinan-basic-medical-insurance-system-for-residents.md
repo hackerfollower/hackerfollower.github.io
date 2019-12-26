@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  济南市城乡居民基本医疗保险
-date:   2014-08-31 21:18:00
+date:   2014-08-31 21:18:00 +0800
 categories: 社会保险
 tags: [基本医疗保险]
 description: 济南市城乡居民基本医疗保险

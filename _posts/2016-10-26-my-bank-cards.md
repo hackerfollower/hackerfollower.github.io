@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  我的银行卡
-date:   2016-10-26 15:30:00
+date:   2016-10-26 15:30:00 +0800
 categories: 1024表格
 tags: [1024表格, 银行卡]
 description: 银行卡明细清单

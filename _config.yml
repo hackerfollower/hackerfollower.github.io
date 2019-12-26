@@ -12,7 +12,6 @@ description:  To follow the path:<br> look to the master,<br> follow the master,
 #
 # 下面的设定都是可选的
 #
-timezone: Asia/Shanghai
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
 avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png

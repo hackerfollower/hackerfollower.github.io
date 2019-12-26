@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  驴肉火烧——一段历史的见证
-date:   2008-04-04 21:05:00
+date:   2008-04-04 21:05:00 +0800
 categories: 随笔
 tags: [六里屯, 驴肉火烧]
 description: 程序猿下班后去吃驴肉火烧

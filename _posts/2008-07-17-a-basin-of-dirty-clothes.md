@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  一盆脏衣服
-date:   2008-07-17 18:05:00
+date:   2008-07-17 18:05:00 +0800
 categories: 随笔
 tags: [王小波]
 description: 一盆脏衣服

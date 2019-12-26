@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  选对保险经纪人，不怕保险理赔难
-date:   2014-12-02 18:00:00
+date:   2014-12-02 18:00:00 +0800
 categories: 商业保险
 tags: [明亚]
 description: 选对保险经纪人，不怕保险理赔难

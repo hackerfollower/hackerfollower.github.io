@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  SSH无密码登录设置
-date:   2012-11-27 22:49:13
+date:   2012-11-27 22:49:13 +0800
 categories: Linux
 tags: [it, Linux, shell, ssh]
 description: 介绍了在服务器端信任客户端公钥，不需要输入密码即可登录远程服务器

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  七子之歌
-date:   2019-12-16 23:33:00
+date:   2019-12-16 23:33:00 +0800
 categories: 随笔
 tags: [澳门回归, 一国两制]
 description: 澳门回归二十周年，参加合唱比赛二十周年

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  重大疾病保险
-date:   2014-12-13 18:00:00
+date:   2014-12-13 18:00:00 +0800
 categories: 商业保险
 tags: [重大疾病保险]
 description: 重大疾病保险的起源、保障及其他
