@@ -12,6 +12,7 @@ description:  To follow the path:<br> look to the master,<br> follow the master,
 #
 # 下面的设定都是可选的
 #
+timezone: Asia/Shanghai
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
 avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
@@ -110,9 +111,9 @@ sass:
 
 # Use the following plug-ins
 plugins:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:
