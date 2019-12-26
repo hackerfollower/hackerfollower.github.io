@@ -1,0 +1,621 @@
+I"��<p><img src="http://liyouhai.qiniudn.com/2014-05-11-opensource-jekyll-theme-jekyllpure.jpg/top" alt="" /></p>
+
+<blockquote>
+  <p><strong>JekyllPure</strong>版本V1.0.0 <br />
+<strong>最后更新</strong>:2014-09-19 16:45
+<!-- more --></p>
+</blockquote>
+
+<p>Demo:<a href="http://liyouhai.com/">曾经不知你好’Blog</a></p>
+
+<p>Github:<a href="https://github.com/liyouhai/JekyllPure">JekyllPure’github</a></p>
+
+<p>##版本更新</p>
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">版本</th>
+      <th style="text-align: left">时间</th>
+      <th style="text-align: left">说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">V0.4.2</td>
+      <td style="text-align: left">2014-05-12 22:00</td>
+      <td style="text-align: left">第一个版本</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">V0.5.0</td>
+      <td style="text-align: left">2014-05-27 16:00</td>
+      <td style="text-align: left">1.修复主页分页.标签与分类URL.<br />2.Font Awesome更新为4.1.0<br /> 3.替换一些小图标为Font<br /> 4.blockquote下的li增加数字前缀样式<br />5.一些导航html移到Public文件夹<br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">V1.0.0</td>
+      <td style="text-align: left">2014-09-19 16:45:04</td>
+      <td style="text-align: left">1.Pure正式为Pure v0.5.0 <br /> 2.毫无技术的使用了Pure官方的blog布局 <br /> 3.兼容性全面支持ie <br /> 4.Font Awesome更新为4.2.0 兼容ie7<br />  5. jquery降级到1.7.2 为了兼容ie <br /> 6.jwplayer加载不需要远程获取js<br /> 7.多说js也调用本地js <br />  8.index.js增加主题颜色随着星期变换.可删除<br /> 9.以后小修改请参照博客源码<br />10.欢迎随便修改使用.有问题留言</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>##使用技术</p>
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">项目基于</th>
+      <th style="text-align: left">说明</th>
+      <th style="text-align: center">版本</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="http://jekyllrb.com/">Jekyll</a></td>
+      <td style="text-align: left">静态博客</td>
+      <td style="text-align: center">Version 2.5.2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://purecss.io/">Pure</a></td>
+      <td style="text-align: left">雅虎前端框架</td>
+      <td style="text-align: center">Version 0.5.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://fontawesome.io/">Fontawesome</a></td>
+      <td style="text-align: left">字体图标</td>
+      <td style="text-align: center">Version 4.2.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://jquery.com/">Jquery</a></td>
+      <td style="text-align: left">javascript</td>
+      <td style="text-align: center">Version 2.1.0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://ricostacruz.com/nprogress/">NProgress.js</a></td>
+      <td style="text-align: left">页面顶部加载条</td>
+      <td style="text-align: center">Version 0.1.6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://projects.jga.me/toc">TOC.js</a></td>
+      <td style="text-align: left">文章目录生成</td>
+      <td style="text-align: center">Version 0.3.2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://fancybox.net/">fancyBox</a></td>
+      <td style="text-align: left">图片盒子</td>
+      <td style="text-align: center">Version 2.1.5</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://alexgorbatchev.com/SyntaxHighlighter/">syntaxhighlighter</a></td>
+      <td style="text-align: left">代码高亮</td>
+      <td style="text-align: center">Version 3.0.83</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://jeromeetienne.github.io/jquery-qrcode/">qrcode</a></td>
+      <td style="text-align: left">网址生成二维码</td>
+      <td style="text-align: center">Version 0.0.1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://addywaddy.github.io/jquery.tagcloud.js/">tagcloud.js</a></td>
+      <td style="text-align: left">标签云</td>
+      <td style="text-align: center">Version 0.0.1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="http://www.jwplayer.com/">Jwplayer</a></td>
+      <td style="text-align: left">HTML5视频插件</td>
+      <td style="text-align: center">Version 6.2.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="环境搭建">环境搭建</h2>
+<hr />
+
+<ol>
+  <li>
+    <p>小前提</p>
+  </li>
+  <li>
+    <p>需了解使用版本控制Git</p>
+  </li>
+  <li>
+    <p>需了解jekyll</p>
+  </li>
+  <li>
+    <p>需了解使用Github、或GitCafe</p>
+  </li>
+  <li>
+    <p>对html等熟悉.或程序员、或适合折腾的人</p>
+  </li>
+</ol>
+
+<p>Mac/Linux下:</p>
+
+<p>请使用如下命令（其中 gem 是 <a href="https://www.ruby-lang.org/">Ruby</a>  的包管理工具）安装 jekyll（如果遇到权限问题请在前面加 sudo）：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll
+</code></pre></div></div>
+
+<h4 id="window-安装步骤"><i class="fa fa-windows"></i>window 安装步骤</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">基于</th>
+      <th style="text-align: center">版本</th>
+      <th style="text-align: right">安装包</th>
+      <th style="text-align: center">安装设置</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Ruby</td>
+      <td style="text-align: center">2.0</td>
+      <td style="text-align: right"><a href="http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.0.0-p481-i386-mingw32.7z">ruby-2.0.0-p481-i386-mingw32.7z</a></td>
+      <td style="text-align: center">环境变量</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">DevKit</td>
+      <td style="text-align: center">1.9</td>
+      <td style="text-align: right"><a href="http://cdn.rubyinstaller.org/archives/devkits/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe">DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe</a></td>
+      <td style="text-align: center">解压</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Python</td>
+      <td style="text-align: center">2.7</td>
+      <td style="text-align: right"><a href="https://www.python.org/ftp/python/2.7.8/python-2.7.8.msi">python-2.7.8.msi</a></td>
+      <td style="text-align: center">环境变量</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">jekyll</td>
+      <td style="text-align: center">2.3.4</td>
+      <td style="text-align: right">gem install jekyll</td>
+      <td style="text-align: center">完成以上</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">wdm</td>
+      <td style="text-align: center">0.1.0</td>
+      <td style="text-align: right">gem install wdm(多数人运行错误都是没安装这依赖)</td>
+      <td style="text-align: center">最后安装</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>环境变量：
+<code class="highlighter-rouge">C:\OpenSources\lib\Jekyll\ruby\bin;C:\OpenSources\lib\Jekyll\DevKit\bin;C:\OpenSources\lib\Jekyll\DevKit\mingw\bin</code></p>
+
+<pre class="brush: ruby">
+
+# 解压DevKit 然后进入文件夹
+cd C:\OpenSources\jekyll\DevKit
+
+# 初始化DevKit 配置文件(记得ruby要加入环境变量)
+C:\OpenSources\jekyll\DevKit&gt;ruby dk.rb init
+Initialization complete! Please review and modify the auto-generated
+'config.yml' file to ensure it contains the root directories to all
+of the installed Rubies you want enhanced by the DevKit.
+
+# 安装DevKit
+C:\OpenSources\jekyll\DevKit&gt;ruby dk.rb install
+[INFO] Updating convenience notice gem override for 'C:/OpenSources/jekyll/ruby'
+[INFO] Installing 'C:/OpenSources/jekyll/ruby/lib/ruby/site_ruby/devkit.rb'
+
+# 查看是否安装gem成功
+C:\OpenSources\jekyll\DevKit&gt;gem --version
+2.0.14
+
+# RubyGems 镜像换为淘宝、防止下载包出错(官网https://ruby.taobao.org/)
+# 移除旧地址
+C:\OpenSources\jekyll\DevKit&gt;gem sources --remove https://rubygems.org/
+https://rubygems.org/ removed from sources
+# 更新为淘宝镜像
+C:\OpenSources\jekyll\DevKit&gt;gem sources -a https://ruby.taobao.org/
+https://ruby.taobao.org/ added to sources
+# 查看是否只有一条镜像地址
+C:\OpenSources\jekyll\DevKit&gt;gem sources -l
+*** CURRENT SOURCES ***
+https://ruby.taobao.org/
+
+# 安装jekyll
+C:\OpenSources\jekyll\DevKit&gt;gem install jekyll
+Fetching: liquid-2.6.1.gem (100%)
+Successfully installed liquid-2.6.1
+Fetching: kramdown-1.4.1.gem (100%)
+Successfully installed kramdown-1.4.1
+Fetching: mercenary-0.3.4.gem (100%)
+Successfully installed mercenary-0.3.4
+----------此处省略xxx---------
+Installing ri documentation for jekyll-watch-1.1.1
+Parsing documentation for fast-stemmer-1.0.2
+unable to convert "\x90" from ASCII-8BIT to UTF-8 for lib/stemmer.so, skipping
+Installing ri documentation for fast-stemmer-1.0.2
+Parsing documentation for classifier-reborn-2.0.1
+Installing ri documentation for classifier-reborn-2.0.1
+Parsing documentation for jekyll-2.4.0
+Installing ri documentation for jekyll-2.4.0
+31 gems installed
+
+# 查看是否安装jekyll成功
+C:\OpenSources\jekyll\DevKit&gt;jekyll -version
+jekyll 2.4.0
+
+# 继续安装依赖包
+C:\OpenSources&gt;gem install wdm
+Fetching: wdm-0.1.0.gem (100%)
+Temporarily enhancing PATH to include DevKit...
+Building native extensions.  This could take a while...
+Successfully installed wdm-0.1.0
+Parsing documentation for wdm-0.1.0
+unable to convert "\x90" from ASCII-8BIT to UTF-8 for lib/wdm_ext.so, skipping
+Installing ri documentation for wdm-0.1.0
+1 gem installed
+
+# 继续安装依赖包代码高亮
+C:\OpenSources\liyouhai&gt;gem install rdiscount
+Fetching: rdiscount-2.1.7.1.gem (100%)
+Temporarily enhancing PATH to include DevKit...
+Building native extensions.  This could take a while...
+Successfully installed rdiscount-2.1.7.1
+Parsing documentation for rdiscount-2.1.7.1
+unable to convert "\x90" from ASCII-8BIT to UTF-8 for lib/rdiscount.so, skipping
+
+Installing ri documentation for rdiscount-2.1.7.1
+1 gem installed
+</pre>
+
+<p><i class="fa fa-warning"></i> 如果运行错误.安装以下步骤</p>
+<pre class="brush: ruby">
+# 删除86版本的yajl
+C:\OpenSources\liyouhai&gt;gem uninstall yajl-ruby
+Successfully uninstalled yajl-ruby-1.1.0-x86-mingw32
+
+# 安装指定版本的yajl
+C:\OpenSources\liyouhai&gt;gem install yajl-ruby -v 1.1.0 --platform=ruby
+Fetching: yajl-ruby-1.1.0.gem (100%)
+Temporarily enhancing PATH to include DevKit...
+Building native extensions.  This could take a while...
+Successfully installed yajl-ruby-1.1.0
+Parsing documentation for yajl-ruby-1.1.0
+unable to convert "\x90" from ASCII-8BIT to UTF-8 for lib/yajl/yajl.so, skipping
+
+Installing ri documentation for yajl-ruby-1.1.0
+1 gem installed
+
+
+# 最终安装pyhton 并且加入环境变量
+</pre>
+
+<p>####Windows其他安装方法②:</p>
+
+<p>官方对 <em>winodws</em> 的支持程度很低，推荐使用 <a href="http://www.madhur.co.in/blog/2013/07/20/buildportablejekyll.html">Building portable Jekyll for Windows</a>，附上网盘地址方便大家下载：<a href="http://pan.baidu.com/s/1dDqtzUT">PortableJekyll 1.3.0[百度网盘]</a></p>
+
+<p>下边以 PortableJekyll 的解压目录为 <code class="highlighter-rouge">e:\jekyll</code> 介绍环境变量的配置：</p>
+
+<ol>
+  <li>
+    <p>在环境变量中新建变量：
+ JEKYLL_HOME 取值为 <code class="highlighter-rouge">e:\jekyll</code></p>
+  </li>
+  <li>
+    <p>为 PATH 变量添加如下内容：
+ <code class="highlighter-rouge">%JEKYLL_HOME%\ruby\bin;%JEKYLL_HOME%\devkit\bin;%JEKYLL_HOME%\git\bin;%JEKYLL_HOME%\Python\App;%JEKYLL_HOME%\devkit\mingw\bin;%JEKYLL_HOME%\curl\bin</code></p>
+  </li>
+  <li>
+    <p>完成 jekyll 配置后，通过如下命令检查是否配置成功：<code class="highlighter-rouge">jekyll -h</code></p>
+  </li>
+  <li>
+    <p>以上为百度<a href="https://github.com/fex-team/fex-team.github.io">FEX</a>提供的方法、本人使用的是<code class="highlighter-rouge">Ruby200-x64</code>原始安装、Jekyll新版本使用基本完美</p>
+  </li>
+</ol>
+
+<hr />
+
+<p><i class="fa fa-play-circle-o"></i>完成 jekyll 的安装后，需要将<a href="https://github.com/liyouhai/JekyllPure">本项目</a> clone 至本地环境，或Download zip按钮<br />
+<em>cmd</em>下<em>cd</em>进去目录目录运行如下命令，就能在 localhost:4000 中预览了：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve -watch (或jekyll serve -w
+</code></pre></div></div>
+
+<p>关于Jekyll:</p>
+
+<p>jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,例如多说评论。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名</p>
+
+<ol>
+  <li>
+    <p>Jekyll官网 <a href="http://jekyllrb.com/">http://jekyllrb.com/</a></p>
+  </li>
+  <li>
+    <p>Jekyll中文网 <a href="http://jekyllcn.com/">http://jekyllcn.com/</a>,</p>
+  </li>
+  <li>
+    <p>Jekyll Themes 主题 <a href="http://jekyllthemes.org/">http://jekyllthemes.org/</a>,</p>
+  </li>
+  <li>
+    <p><strong>Google搜索</strong>site:github.io <a href="http://203.208.46.148/#newwindow=1&amp;q=site:github.io">github.io</a>.</p>
+  </li>
+  <li>
+    <p>如果你熟悉html等.完全可以自己弄首页与内容页模板就可以搭建博客了、也可以使用本主题.请尊重作者,保留footer主题地址</p>
+  </li>
+</ol>
+
+<h2 id="使用说明">使用说明</h2>
+<hr />
+
+<ul>
+  <li>大致浏览JekyllPure代码的结构、能方便理解以下的技巧</li>
+  <li>更改自己的多说id <code class="highlighter-rouge">_includes\duoshuo.html --&gt; var duoshuoQuery = {short_name:"你申请的ID"};</code></li>
+  <li>全文搜索功能<a href="http://tapirgo.com/">tapirgo</a>填写邮箱和网站rss地址生成.需要提前部署一次到远程仓库.返回<code class="highlighter-rouge">token</code>填写在<code class="highlighter-rouge">search.html</code></li>
+  <li>发布文章<code class="highlighter-rouge">duoshuo: false</code> 可关闭评论</li>
+  <li>发布文章<code class="highlighter-rouge">avatarimg: "http://liyouhai.com/images/lindachung.jpg"</code> 为首页文章小头像</li>
+  <li>url地址RESTful风格设置<code class="highlighter-rouge">permalink: 1/</code> 地址为<code class="highlighter-rouge">http://liyouhai.com/1</code></li>
+</ul>
+
+<p>文章发表:</p>
+
+<p>在<em>_posts</em>目录下新建<em>2014-05-11-opensource-jekyll-theme-jekyllpure.md</em>文件名有规定的格式</p>
+<pre class="brush: html">
+---
+layout: post     //使用哪个模板、`_layouts`下可自定义模板
+title: Jekyll主题 &bull;JekyllPure
+description: "文章的描述、可复制百度搜索排前的和你文章相符的描述"
+category: Project    //文章的分类.看本文url就提现出来.
+avatarimg: "/img/lindachung.jpg"  //首页文章题目旁边的小头像.可上传文章作者头像或者相关的图标
+tags : [ 静态博客] //标签,方便搜索引擎收录 <meta name="keywords" content="静态博客" />
+---
+文章正文
+<!-- more --> //在首页文章内容截取的部分.后面的内容不再首页显示.
+</pre>
+<p>文章插入代码:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="p">{</span><span class="sx">% highlight </span><span class="n">java</span>  <span class="sx">%}   //可填写各种语言例如ruby.javascript.css.html
+       System.out.print("输出") ;
+{% endhighlight %}</span></code></pre></figure>
+
+<p>文章的图片存放:</p>
+
+<p>1.只能墙裂推荐七牛云储存.但愿伸出你援助之手我的<a href="https://portal.qiniu.com/signup?code=3ldl7ior52n2q">邀请地址</a>,没有副作用(本人能增加流量</p>
+
+<p>2.七牛云储存提供10G的免费空间,以及每月10G的流量.存放个人博客图片最好不过了</p>
+
+<p>3.本人不是打广告的、用了真心好.有各种图形处理功能.缩略图.视频存放速度也给力.还有CDN加速功能喔,你还等什么</p>
+
+<p>视频播放:</p>
+
+<p>可以使用<code class="highlighter-rouge">Jwplayer</code>插件直接在<code class="highlighter-rouge">xxxx.md</code>下使用以下代码.<code class="highlighter-rouge">Markdown</code>会直接解析运行代码.<br />(小技巧:直接输入<code class="highlighter-rouge">html</code>的代码如<code class="highlighter-rouge">&lt;br&gt;</code>页面会是一个换行</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../js/min/jwplayer/jwplayer.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"videotop"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nx">jwplayer</span><span class="p">(</span><span class="dl">"</span><span class="s2">videotop</span><span class="dl">"</span><span class="p">).</span><span class="nx">setup</span><span class="p">({</span>
+    <span class="na">flashplayer</span><span class="p">:</span> <span class="dl">"</span><span class="s2">../js/min/jwplayer/jwplayer.flash.swf</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">file</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://liyouhai.qiniudn.com/2014-05-04-intellij-idea-guide-note.mp4</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">image</span><span class="p">:</span> <span class="dl">'</span><span class="s1">http://liyouhai.qiniudn.com/2014-05-04-intellij-idea-guide-note01.jpg</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">aboutlink</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://liyouhai.com</span><span class="dl">"</span><span class="p">,</span>
+		<span class="na">width</span><span class="p">:</span> <span class="dl">'</span><span class="s1">743</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">height</span><span class="p">:</span> <span class="dl">'</span><span class="s1">360</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">stretching</span><span class="p">:</span> <span class="dl">"</span><span class="s2">fill</span><span class="dl">"</span><span class="p">,</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<p>音频播放:
+直接黏贴音频地址就可以显示了</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"http://www.xiami.com/widget/player-single?uid=0&amp;sid=1771944809&amp;mode=js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<p>##Markdown</p>
+<hr />
+
+<p><img src="http://liyouhai.qiniudn.com/2014-04-04-Markdown-document-StackEdit-css.jpg/top&quot;StackEdit编译器截图&quot;" alt="" /></p>
+<blockquote>
+  <p><strong>Markdown</strong>:很多人用它写博客.可读性高.写作方便.表格、脚注、展现的非常棒<br />
+<strong>StackEdit</strong>：是一个开放源码免费使用的 MarkDown 的在线编辑器</p>
+</blockquote>
+
+<p>看到在线编辑<a href="https://stackedit.io">StackEdit</a>很漂亮，很清爽.动了心.把它的CSS样式抄过来.改了背景色.一些小样式.发现它小图标是用<a href="http://fontawesome.io/"><i class="fa fa-external-link"></i> fontawesome</a>字体图标</p>
+
+<p>####Fontawesome使用
+<strong>Fontawesome</strong> 一款字体小图标.<i class="fa fa-ambulance"></i>通过<code class="highlighter-rouge">&lt;i class="fa fa-ambulance"&gt;&lt;/i&gt;</code>调用.官网还有更多的图标样式.我们只需要增加你所喜欢图标的class.前端<code class="highlighter-rouge">bootstrap</code>框架也是运用了这个字体库</p>
+
+<p><i class="fa fa-file-text-o"></i> 官网下载后.加入css和font文件夹到服务器.网页载入CSS文件</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/css/font-awesome.min.css"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p><i class="fa fa-paperclip"></i> fontawesome4.0.3版本IE7兼容下载</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--[if IE 7]&gt;
+&lt;link rel="stylesheet" href="/css/font-awesome-ie7.css"&gt;&lt;![endif]--&gt;</span></code></pre></figure>
+
+<p><i class="fa fa-arrow-circle-o-right"></i>尽情添加你的小图标吧</p>
+
+<p><i class="fa fa-rub"></i>
+<i class="fa fa-ruble"></i>
+<i class="fa fa-rouble"></i>
+<i class="fa fa-pagelines"></i>
+<i class="fa fa-stack-exchange"></i>
+<i class="fa fa-arrow-circle-o-left"></i>
+<i class="fa fa-caret-square-o-left"></i>
+<i class="fa fa-toggle-left"></i>
+<i class="fa fa-dot-circle-o"></i>
+<i class="fa fa-wheelchair"></i>
+<i class="fa fa-vimeo-square"></i>
+<i class="fa fa-try"></i>
+<i class="fa fa-turkish-lira"></i>
+<i class="fa fa-plus-square-o"></i></p>
+
+<hr />
+
+<p>####Markdown语法</p>
+
+<p>显示图片：<code class="highlighter-rouge">![](url)</code></p>
+
+<p>超级连接：<code class="highlighter-rouge">[&lt;i class=""&gt;&lt;/i&gt; text](url)</code></p>
+
+<p>显示本url：<code class="highlighter-rouge">[url][1]</code>:</p>
+
+<p>文字加粗：<code class="highlighter-rouge">**Text**</code></p>
+
+<p>字体斜体：<code class="highlighter-rouge">*Text*</code></p>
+
+<p>显示警告：<i class="label label-danger">It’s time to be brave.Say I’m not afraid.Not anymore.I used to be calm</i></p>
+
+<p>显示代码：<code class="highlighter-rouge">code</code> 注</p>
+
+<p>更多语法查看: <a href="http://ued.taobao.com/blog/2012/07/getting-started-with-markdown/">淘宝UED博客Markdown介绍</a></p>
+
+<p>表格：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Item</th>
+      <th style="text-align: right">Value</th>
+      <th style="text-align: center">Qty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Computer</td>
+      <td style="text-align: right">1600 USD</td>
+      <td style="text-align: center">5</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Phone</td>
+      <td style="text-align: right">12 USD</td>
+      <td style="text-align: center">12</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Pipe</td>
+      <td style="text-align: right">1 USD</td>
+      <td style="text-align: center">234</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<p>####Markdown代码高亮</p>
+
+<p><strong>高亮：</strong>采用的是<code class="highlighter-rouge">highlight</code>版本有多种.由于<code class="highlighter-rouge">pygments</code>生成的是以下div结构</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"highlight"</span><span class="nt">&gt;&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"java"</span><span class="nt">&gt;</span>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cm"</span><span class="nt">&gt;</span>test<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+<p>这种结构颜色的定义css</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"> <span class="nt">pre</span> <span class="nc">.cm</span><span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="m">#60a0b0</span><span class="p">}</span></code></pre></figure>
+
+<p>不难看出<code class="highlighter-rouge">pygments</code>在生成代码高亮的时候自动用<code class="highlighter-rouge">&lt;span&gt;</code>标签来分割代码关键字再加以class定义,为此我找到了几款<code class="highlighter-rouge">Markdown css</code>的样式</p>
+
+<p>####Highlight CSS的样式</p>
+
+<blockquote>
+  <p><strong>NOTE:</strong> Pygments online demo</p>
+
+  <ul>
+    <li><strong>Markdown</strong> Demo列表 <a href="http://pygments.org/demo/">here</a>,</li>
+    <li><strong>Markdown java</strong> demo <a href="http://pygments.org/demo/313289/">here</a>,</li>
+    <li><strong>Markdown html</strong> demo <a href="http://pygments.org/demo/312945/http://pygments.org/demo/312945/">here</a>,</li>
+    <li><strong>Markdown JavaScript</strong> demo <a href="http://pygments.org/demo/280629/">here</a>,</li>
+    <li><strong>Markdown css</strong> demo <a href="http://pygments.org/demo/273794/">here</a>.</li>
+  </ul>
+</blockquote>
+
+<p>##Jekyll技巧</p>
+<hr />
+
+<blockquote>
+  <p><strong>jekyll</strong>无所不能了.越来越多的开源项目的主页大多是jekyll生成托管在github.io.包括jekyll主页等<br /></p>
+</blockquote>
+
+<p>小提示:如果想学习jekyll新版本增加的特性.可在源码下运行<code class="highlighter-rouge">cd C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\jekyll-2.0.2\site</code></p>
+
+<p><strong>Page域</strong>:就是特定某篇文章范围、我们可以在发布文章的<code class="highlighter-rouge">.md</code>文件下.增加自己的变量.例如 <code class="highlighter-rouge">avatarimg: "任何文本内容"</code>在文章迭代<code class="highlighter-rouge">_layouts/post.html</code>使用方法为</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">header</span> <span class="k">class</span><span class="o">=</span><span class="s2">"post-header"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">img</span> <span class="k">class</span><span class="o">=</span><span class="s2">"post-avatar"</span> <span class="n">height</span><span class="o">=</span><span class="s2">"48"</span> <span class="n">width</span><span class="o">=</span><span class="s2">"48"</span>
+         <span class="n">src</span><span class="o">=</span><span class="s2">"{{ page.avatarimg }}"</span><span class="o">&gt;</span></code></pre></figure>
+
+<p><strong>Post域</strong>:也算是公共的范围吧.例如在首页<code class="highlighter-rouge">index.html</code>遍历全部文章.具体哪一篇当然会有一个for循环.当然page域有的变量post也会拥有</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">{% for post in paginator.posts %}
+ <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"post-title"</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"post-meta"</span><span class="nt">&gt;</span>By {{ post.date | date: "%m" }}月{{ post.date | date: "%d" }}日  {{ post.date | date: "%Y" }}
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"post-categorybut "</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>{{ post.categories  }}<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"post-category "</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> {{ post.tags | first }}<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"post-category "</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>  {{ post.tags[1] }}<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/p&gt;&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-description"</span><span class="nt">&gt;</span>
+   {{ post.content | split:'<span class="c">&lt;!-- more --&gt;</span>'| first }}
+   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ post.url }}"</span> <span class="na">class=</span><span class="s">"post-categorybut"</span><span class="nt">&gt;</span>阅读全文<span class="nt">&lt;/a&gt;</span>
+{% endfor %}</code></pre></figure>
+
+<p>我们可以遍历全部.也可以选择数组中的某个值</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"> <span class="p">{{</span> <span class="n">post</span><span class="p">.</span><span class="nf">tags</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">}}</span> <span class="err">这里的数组也是从</span><span class="mi">0</span><span class="err">下标开始数起</span></code></pre></figure>
+
+<p>也可以使用过滤器</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="p">{{</span> <span class="n">post</span><span class="p">.</span><span class="nf">content</span> <span class="o">|</span> <span class="nb">split</span><span class="ss">:'&lt;!-- more --&gt;'</span><span class="o">|</span> <span class="n">first</span> <span class="p">}}</span></code></pre></figure>
+
+<p>以上的中文日期年月日.也是使用了过滤器!!更多的过滤器方法参照<a href="http://yanshasha.com/2013/01/22/Liquid-for-Designers/">Liquid for Designers(译)</a></p>
+
+<p>我们可以让某篇博文特殊关照.例如没有评论.没有分享按钮.没有任何你想到的(来、看代码<code class="highlighter-rouge">\_layouts\post.html</code></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"> <span class="p">{</span><span class="sx">% if </span> <span class="n">page</span><span class="p">.</span><span class="nf">duoshuo</span> <span class="o">!=</span> <span class="kp">false</span> <span class="sx">%}
+    {% include duoshuo.html %}</span>
+    <span class="p">{</span><span class="sx">% endif </span><span class="o">%</span><span class="p">}</span></code></pre></figure>
+
+<p>具体使用办法只要在不想评论的文章.增加<code class="highlighter-rouge">duoshuo: false</code>即可关闭评论功能.默认不配置为开启
+你可以为博文增加各种变量、例如指定下一页URL.上一页URL,</p>
+
+<p><strong>site域</strong>:应该算为全局变量吧.在<code class="highlighter-rouge">_config.yml</code>定义使用</p>
+
+<p>##404网页</p>
+<hr />
+
+<blockquote>
+  <p><strong>网站</strong>只需要在自己的404页面中嵌入一段简单的代码，就能通过互联网来迅速传播失踪儿童信息，从而提高找回失踪儿童的概率。失踪儿童信息来自宝贝回家寻子网。</p>
+</blockquote>
+
+<p>####公益404页面接入方法?</p>
+<ul>
+  <li><a href="http://www.qq.com/404/">腾讯公益404</a></li>
+  <li><a href="http://yibo.iyiyun.com/Index/web404">益云公益404</a></li>
+  <li><a href="http://liyouhai.com/jfajfajflaf">本站案例</a></li>
+</ul>
+
+<p>####注意事项</p>
+<ul>
+  <li>如果一个 404 页面的内容小于 512B，IE 会认为该 404 页面不够友好，在 IE 下将不会成功返回该 404 错误页面</li>
+  <li>以下的代码给插入了2种公益的代码。页面大小刚好够，单单加入一个会被IE浏览器报403错误</li>
+  <li>javascript的代码插入到body里面才有效</li>
+  <li>jekyll博客的只需要在根目录创建404.html</li>
+  <li>在<code class="highlighter-rouge">&lt;head&gt;</code>增加<code class="highlighter-rouge">&lt;META HTTP-EQUIV="Refresh" CONTENT="5;URL=http://liyouhai.com/"&gt;</code>能五秒后跳转回首页</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>网页找不到_404公益<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="na">src=</span><span class="s">"http://www.qq.com/404/search_children.js"</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;iframe</span> <span class="na">scrolling=</span><span class="s">'no'</span> <span class="na">frameborder=</span><span class="s">'0'</span> <span class="na">src=</span><span class="s">'http://yibo.iyiyun.com/js/yibo404/key/2057'</span> <span class="na">width=</span><span class="s">'640'</span> <span class="na">height=</span><span class="s">'464'</span> <span class="na">style=</span><span class="s">'display:block; margin:0 auto;'</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<p>##其它扩展</p>
+<hr />
+
+<p><strong>微搜索</strong>:站内搜索引擎
+使用方法.参照http://doc.tinysou.com/guides/overview.html</p>
+
+<h2 id="本文日志">##本文日志</h2>
+<p>|时间   | 修改内容  |
+| :——– | :——–|
+| 2014-05-12 22:00|主题基本说明|
+|2014-05-19 16:00|增加jekyll的技巧|
+|2014-05-27 16:00|版本更新|
+|2014-09-11 14:00|win下安装jekyll教程|
+|2014-11-04 12:07:44|增加微搜索全文检索服务|</p>
+:ET

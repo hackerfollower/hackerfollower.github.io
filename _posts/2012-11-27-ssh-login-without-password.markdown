@@ -7,9 +7,7 @@ tags: [Secure Shell, shell, ssh]
 description: 介绍了在服务器端信任客户端公钥，不需要输入密码即可登录远程服务器
 keywords: Secure Shell, shell, ssh
 ---
-{% include JB/setup %}
 
----
 
 # 0. 引言
 

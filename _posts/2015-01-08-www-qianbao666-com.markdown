@@ -7,9 +7,6 @@ tags: [互联网金融, 钱宝网]
 description: 高达70%年化收益率的互联网金融平台
 keywords: 钱宝网, 互联网金融, 高收益率
 ---
-{% include JB/setup %}
-
----
 
 # 收益率真高得吓人
 

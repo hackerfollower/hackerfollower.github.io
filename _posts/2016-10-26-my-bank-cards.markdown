@@ -7,9 +7,6 @@ tags: [1024表格, 银行卡]
 description: 银行卡明细清单
 keywords: 银行卡
 ---
-{% include JB/setup %}
-
----
 
 [国内银行业金融机构清单](http://www.cbrc.gov.cn/chinese/jrjg/index.html)
 

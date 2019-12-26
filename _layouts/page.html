@@ -1,8 +1,12 @@
 ---
 layout: default
-nav: page
-theme :
-  name : pure
 ---
-{% include JB/setup %}
-{% include themes/pure/page.html %}
+
+<article class="page">
+
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+</article>

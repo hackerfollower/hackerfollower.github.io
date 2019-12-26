@@ -7,9 +7,6 @@ tags: [重大疾病保险]
 description: 重大疾病保险的起源、保障及其他
 keywords: 重大疾病保险
 ---
-{% include JB/setup %}
-
----
 
 # 经济生命
 

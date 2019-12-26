@@ -7,9 +7,6 @@ tags: [VPN, 云梯]
 description: 好用的VPN
 keywords: VPN, 云梯
 ---
-{% include JB/setup %}
-
----
 
 第一，非常好用。
 
