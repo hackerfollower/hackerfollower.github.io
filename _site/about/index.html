@@ -38,8 +38,8 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" type="text/css" href="/style.css" />
-  <link rel="alternate" type="application/rss+xml" title="HackerFollower - To follow the path:<br> look to the master,<br> follow the master,<br> walk with the master,<br> see through the master,<br> become the master." href="/feed.xml" />
+  <link rel="stylesheet" type="text/css" href="/blog/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="HackerFollower - To follow the path:<br> look to the master,<br> follow the master,<br> walk with the master,<br> see through the master,<br> become the master." href="/blog/feed.xml" />
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png">
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
   <script src="https://kit.fontawesome.com/56f7faf3f4.js"></script>
@@ -62,9 +62,9 @@
   <header class="sidebar clearfix">
     <div class="site-info">
       
-        <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png" /></a>
+        <a href="/blog/" class="site-avatar"><img src="https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png" /></a>
        
-      <h1 class="site-name"><a href="/">HackerFollower</a></h1>
+      <h1 class="site-name"><a href="/blog/">HackerFollower</a></h1>
       <p class="site-description">To follow the path:<br> look to the master,<br> follow the master,<br> walk with the master,<br> see through the master,<br> become the master.</p>
     </div>
   </header>
@@ -73,19 +73,19 @@
     <nav>
       
       
-      <a href="/">Home</a>
+      <a href="/blog/">Home</a>
       
       
       
-      <a href="/about">About</a>
+      <a href="/blog/about">About</a>
       
       
       
-      <a href="/archive">Archive</a>
+      <a href="/blog/archive">Archive</a>
       
       
       
-      <a href="/tags">Tags</a>
+      <a href="/blog/tags">Tags</a>
       
       
     </nav>
@@ -164,6 +164,21 @@
     </div>
 
     
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-155036797-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/blog/about/',
+		  'title': '关于'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
 
   </body>
 
