@@ -29,6 +29,6 @@ description: 分期付款的利率陷阱
 
 但是，故事还没有完，中信信金宝的销售又开始给我打电话了，我们不收一分钱利息，月手续费率只有0.85%……
 
-  [1]:http://blog-27zeros.qiniudn.com/20150113%E7%A6%8F%E8%83%B62014.jpg
+  [1]:http://qiniu.hackerfollower.org/20150113%E7%A6%8F%E8%83%B62014.jpg
 
 （完）

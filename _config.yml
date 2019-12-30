@@ -59,7 +59,7 @@ footer-links:
   zhihu: hackerfollower #https://www.zhihu.com/people/<>
 
 # 站点页脚的文字
-footer-text: Copyright (c) 2019 LiuLang
+footer-text: Copyright (c) 2019 LiuLang. Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> and <a href="https://fromendworld.github.io/LOFFER/">LOFFER</a>
 
 # 评论，注意，请不要同时添加多种不同的评论区
 

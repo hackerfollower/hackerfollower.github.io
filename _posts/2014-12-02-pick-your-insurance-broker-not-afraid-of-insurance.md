@@ -23,9 +23,9 @@ description: 选对保险经纪人，不怕保险理赔难
 
 阅读详情请点击：[售后服务-相同案件不同结果 保险经纪人代客户争取合法利益][4]
 
-[1]: http://blog-27zeros.qiniudn.com/lipei%E6%A1%88%E4%BE%8B1.png
-[2]: http://blog-27zeros.qiniudn.com/lipei%E6%A1%88%E4%BE%8B2.png
-[3]: http://blog-27zeros.qiniudn.com/lipei%E5%B0%98%E5%B0%81%E4%B8%A4%E5%B9%B4%E6%8B%92%E8%B5%94%E6%A1%88%E9%80%9A%E8%BF%87%E6%98%8E%E4%BA%9A%E7%BB%88%E8%8E%B7%E5%85%A8%E9%A2%9D%E7%90%86%E8%B5%94.pdf
+[1]: http://qiniu.hackerfollower.org/lipei%E6%A1%88%E4%BE%8B1.png
+[2]: http://qiniu.hackerfollower.org/lipei%E6%A1%88%E4%BE%8B2.png
+[3]: http://qiniu.hackerfollower.org/lipei%E5%B0%98%E5%B0%81%E4%B8%A4%E5%B9%B4%E6%8B%92%E8%B5%94%E6%A1%88%E9%80%9A%E8%BF%87%E6%98%8E%E4%BA%9A%E7%BB%88%E8%8E%B7%E5%85%A8%E9%A2%9D%E7%90%86%E8%B5%94.pdf
 [4]: http://insurance.hexun.com/2013-01-24/150529497.html
 
 （完）

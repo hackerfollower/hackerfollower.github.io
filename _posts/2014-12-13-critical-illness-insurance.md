@@ -38,8 +38,8 @@ description: 重大疾病保险的起源、保障及其他
 
 没有自然环境的污染、没有演艺公司的压迫、没有经济生活的压力，愿她在天国，没有痛苦，尽情歌唱。
 
-[1]: http://blog-27zeros.qiniudn.com/20150117zdjb02.jpg
-[2]: http://blog-27zeros.qiniudn.com/20150117zdjb01.jpg
+[1]: http://qiniu.hackerfollower.org/20150117zdjb02.jpg
+[2]: http://qiniu.hackerfollower.org/20150117zdjb01.jpg
 [3]: http://www.700du.cn/prod/jxyxds.html?inviter=0000014042
 
 （完）
