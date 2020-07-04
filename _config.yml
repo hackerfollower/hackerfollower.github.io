@@ -41,7 +41,6 @@ footer-links:
   behance: # https://www.behance.net/<>
   douban: hackerfollower # https://www.douban.com/people/<>
   dribbble: # https://dribbble.com/<>
-  email: hackerfollower@163.com 
   facebook: hackerfollower #https://www.facebook.com/<>
   flickr: #https://www.flickr.com/<>
   github: hackerfollower #https://github.com/<>
@@ -54,9 +53,7 @@ footer-links:
   stackoverflow: # http://stackoverflow.com/<>
   tumblr: # https://<username>.tumblr.com
   twitter: hackerfollower # https://www.twitter.com/<>
-  weibo: liubuhu #https://www.weibo.com/<>
   youtube: # channel/<> or user/<>
-  zhihu: hackerfollower #https://www.zhihu.com/people/<>
 
 # 站点页脚的文字
 footer-text: Copyright (c) 2019 LiuLang. Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> and <a href="https://fromendworld.github.io/LOFFER/">LOFFER</a>
@@ -77,7 +74,7 @@ gitalk:
 google_analytics: UA-155037305-1
 
 # 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
-url: "https://hackerfollower.org"
+url: "https://blog.hackerfollower.org"
 
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
